@@ -98,8 +98,8 @@ var endGame = function() {
             // restart the game
             startGame();
     } 
-        else {
-            window.alert("Thank you for playing Robot Gladiators! Come back soon!");
+    else {
+            indow.alert("Thank you for playing Robot Gladiators! Come back soon!");
     }
   };
 
