@@ -62,6 +62,7 @@ var startGame = function() {
         // let player know the round
         if (playerInfo.health > 0) {
             window.alert("Welcome to Robot Gladiators! Round"+ (i+1));
+            debugger;
             //pick the new enemy
             var pickedEnemyObj = enemyInfo[i];
             // reset the enemy health
@@ -137,8 +138,16 @@ var shop = function() {
     }
 };
 
+var getPlayerName = function() {
+    var name = '';
+    while(name === '' || name === null) {
+        name = prompt("What is your robot's name?");
+    }
+    return name;
+};
+
 var playerInfo = {
-    name: window.prompt("What is your robot's name?"),
+    name: getPlayerName(),
     health: 100,
     attack: 10,
     money: 10,
